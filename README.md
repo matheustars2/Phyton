@@ -7,13 +7,13 @@ from datetime import datetime
 SCORES_FILE = "scores.json"
 
 FORTUNES = [
-    "Hoje é um bom dia para começar algo novo.",
-    "Uma surpresa agradável te espera.",
-    "Confie na sua intuição.",
-    "Pequenos passos levam a grandes conquistas.",
-    "Alguém valoriza sua amizade.",
-    "Hora de praticar paciência.",
-    "Aproveite as pequenas vitórias.",
+    "Today is a great day to start something new.",
+    "A pleasant surprise is coming your way.",
+    "Trust your intuition.",
+    "Small steps lead to big achievements.",
+    "Someone appreciates your friendship.",
+    "Time to practice patience.",
+    "Enjoy the small victories.",
 ]
 
 def load_scores():
@@ -36,12 +36,11 @@ def clear_screen():
 
 def play():
     clear_screen()
-    print("=== Minigame: Biscoito da Sorte ===")
-    score = 0
+    print("=== Fortune Co
 
-    while True:
         inp = input("Pressione Enter para abrir um biscoito (ou 'q' para sair): ")
         if inp.strip().lower() == "q":
             break
 
         points = random.randint(1, 10)
+
